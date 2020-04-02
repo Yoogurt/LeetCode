@@ -3,7 +3,7 @@ fun main(args: Array<String>) {
     println(reverseWords(ret))
 }
 
-fun reverseWords(s: String): String {
+private fun reverseWords(s: String): String {
     val ret = s.split(" ")
 
     return ret.map {
@@ -13,7 +13,7 @@ fun reverseWords(s: String): String {
     }.joinToString(separator = " ")
 }
 
-fun reverseString(s: CharArray) {
+private fun reverseString(s: CharArray) {
     for (index in 0 until (s.size ushr 1)) {
         val tmp = s[index]
         s[index] = s[s.lastIndex - index]

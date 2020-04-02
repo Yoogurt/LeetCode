@@ -4,7 +4,7 @@ fun main(args: Array<String>) {
 
 data class IntRef(var data: Int)
 
-fun kthSmallest(root: TreeNode?, k: Int): Int {
+private fun kthSmallest(root: TreeNode?, k: Int): Int {
     if (root == null) {
         return 0
     }
@@ -12,7 +12,7 @@ fun kthSmallest(root: TreeNode?, k: Int): Int {
     return rec(root, IntRef(k))!!.`val`
 }
 
-fun rec(node: TreeNode?, k: IntRef): TreeNode? {
+private fun rec(node: TreeNode?, k: IntRef): TreeNode? {
     node ?: return null
 
     val left = rec(node.left, k)

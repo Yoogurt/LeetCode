@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
     println(reverseListRec(buildListNode(1, 5, 3, 4, 5)))
 }
 
-fun reverseList(head: ListNode?): ListNode? {
+private fun reverseList(head: ListNode?): ListNode? {
     head ?: return null
 
     var pre: ListNode? = null
@@ -19,7 +19,7 @@ fun reverseList(head: ListNode?): ListNode? {
     return pre
 }
 
-fun reverseListRec(current: ListNode?): ListNode? {
+private fun reverseListRec(current: ListNode?): ListNode? {
     current?.next ?: return current
 
     val next = reverseListRec(current.next)

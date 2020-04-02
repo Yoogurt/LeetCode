@@ -4,7 +4,7 @@ fun main(args: Array<String>) {
     println(containsDuplicate(intArrayOf(1, 2, 3, 4)))
 }
 
-fun containsDuplicate(nums: IntArray): Boolean {
+private fun containsDuplicate(nums: IntArray): Boolean {
     val set = TreeSet<Int>()
 
     nums.forEach {

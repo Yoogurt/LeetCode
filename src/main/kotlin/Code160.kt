@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     print(getIntersectionNode(left, right))
 }
 
-fun getIntersectionNode(headA: ListNode?, headB: ListNode?): ListNode? {
+private fun getIntersectionNode(headA: ListNode?, headB: ListNode?): ListNode? {
     headA ?: return null
     headB ?: return null
 

@@ -2,7 +2,7 @@ fun main() {
     print(productExceptSelf(intArrayOf(1, 2, 3, 4)).contentToString())
 }
 
-fun productExceptSelf(nums: IntArray): IntArray {
+private fun productExceptSelf(nums: IntArray): IntArray {
     val ret = IntArray(nums.size) { 1 }
 
     var currentMultiple = 1

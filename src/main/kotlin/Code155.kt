@@ -25,7 +25,7 @@ fun main(args: Array<String>) {
     println(stack.getMin())
 }
 
-class MinStack() {
+private class MinStack() {
     /** initialize your data structure here. */
 
     private val queue = Stack<Int>()

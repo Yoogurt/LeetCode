@@ -5,10 +5,10 @@ fun main(args: Array<String>) {
 
 fun parentOf(childIndex: Int) = (childIndex - 1) shr 1
 
-fun leftChildOf(parentIndex: Int) = (parentIndex shl 1) + 1
-fun rightChildOf(parentIndex: Int) = (parentIndex shl 1) + 2
+private fun leftChildOf(parentIndex: Int) = (parentIndex shl 1) + 1
+private fun rightChildOf(parentIndex: Int) = (parentIndex shl 1) + 2
 
-fun findKthLargest(nums: IntArray, k: Int): Int {
+private fun findKthLargest(nums: IntArray, k: Int): Int {
     if (k > nums.size) {
         throw IllegalArgumentException()
     }
@@ -26,7 +26,7 @@ fun findKthLargest(nums: IntArray, k: Int): Int {
     return topHeap.first()
 }
 
-fun IntArray.reorder(index: Int) {
+private fun IntArray.reorder(index: Int) {
     var current = index
     var leftChildIndex = leftChildOf(current)
     var rightChildIndex = rightChildOf(current)
