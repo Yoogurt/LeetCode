@@ -3,7 +3,7 @@ fun main(args: Array<String>) {
     print(findKthLargest(intArrayOf(3, 2, 3, 1, 2, 4, 5, 5, 6), 4))
 }
 
-fun parentOf(childIndex: Int) = (childIndex - 1) shr 1
+private fun parentOf(childIndex: Int) = (childIndex - 1) shr 1
 
 private fun leftChildOf(parentIndex: Int) = (parentIndex shl 1) + 1
 private fun rightChildOf(parentIndex: Int) = (parentIndex shl 1) + 2

@@ -1,7 +1,7 @@
 import java.util.*
 
 fun main() {
-    print(preorderTraversal(buildTreeNode(1, 5, 2, 3,4)))
+    print(preorderTraversal(buildTreeNode(1, 5, 2, 3, 4)))
 }
 
 private fun preorderTraversal(root: TreeNode?): List<Int> {
@@ -11,7 +11,7 @@ private fun preorderTraversal(root: TreeNode?): List<Int> {
 
     while (current != null || stack.isNotEmpty()) {
 
-        while (current != null){
+        while (current != null) {
             result += current.`val`
             stack.push(current)
             current = current.left
