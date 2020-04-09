@@ -1,5 +1,5 @@
 fun main() {
-    println(swapPairs(buildListNode(1,2)))
+    println(swapPairs2(buildListNode(1, 2, 3, 5, 6)))
 }
 
 private fun swapPairs(head: ListNode?): ListNode? {
@@ -7,7 +7,7 @@ private fun swapPairs(head: ListNode?): ListNode? {
 
     var headToLink: ListNode? = null
 
-    var next :ListNode? = current.next ?: return head
+    var next: ListNode? = current.next ?: return head
     var result: ListNode? = null
 
 
@@ -36,3 +36,19 @@ private fun swapWithNextNode(node: ListNode, headNeedToLink: ListNode?): ListNod
     return node
 }
 
+
+private fun swapPairs2(head: ListNode?): ListNode? {
+    val fastNode = head?.next?.next
+    head?.next ?: return head
+
+    val result = reserveList(head)
+    result.next?.next = swapPairs2(fastNode)
+    return result
+}
+
+private fun reserveList(node: ListNode): ListNode {
+    val next = node.next
+    next!!.next = node
+    node.next = null
+    return next
+}

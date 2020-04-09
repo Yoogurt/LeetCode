@@ -1,9 +1,4 @@
-import sun.reflect.generics.tree.Tree
-import java.util.*
-
 data class ListNode(var `val`: Int, var next: ListNode? = null)
-
-typealias Node = ListNode
 
 fun buildListNode(vararg args: Int): ListNode {
     assert(args.isNotEmpty())

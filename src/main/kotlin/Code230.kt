@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
     println(kthSmallest(buildTreeNode(5, 3, 6, 2, 4, null, null, 1), 3))
 }
 
-data class IntRef(var data: Int)
+private data class IntRef(var data: Int)
 
 private fun kthSmallest(root: TreeNode?, k: Int): Int {
     if (root == null) {
