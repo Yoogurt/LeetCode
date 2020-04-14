@@ -1,7 +1,7 @@
 package main.kotlin
 
 fun main(args: Array<String>) {
-    println(threeSum(intArrayOf(-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6)))
+    println(threeSum(intArrayOf(-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6)))
 }
 
 fun threeSum(nums: IntArray): List<List<Int>> {
