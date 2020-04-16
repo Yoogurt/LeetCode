@@ -1,6 +1,5 @@
 package main.kotlin.Tencent
 
-import kotlin.math.max
 fun main() {
     println(uniquePaths(7, 3))
 }

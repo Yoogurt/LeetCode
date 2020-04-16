@@ -11,9 +11,6 @@ inline fun <T> weak(self: T, action: (ReceiverZone<T>) -> Unit) {
 }
 
 fun main() {
-    weak(1) { zone ->
-        zone {
-            val current = this + 1
-        }
-    }
+    val set = hashSetOf<Int>()
+    set.iterator().next()
 }
