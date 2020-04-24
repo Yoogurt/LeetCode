@@ -1,4 +1,4 @@
-data class ListNode(var `val`: Int, var next: ListNode? = null)
+data class ListNode(@JvmField var `val`: Int, @JvmField var next: ListNode? = null)
 
 fun buildListNode(vararg args: Int): ListNode {
     assert(args.isNotEmpty())
