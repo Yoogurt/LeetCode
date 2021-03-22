@@ -1,4 +1,4 @@
-package every_day
+package everyday
 
 fun main(){
     intArrayOf(0,1,5,0,1,3).also {

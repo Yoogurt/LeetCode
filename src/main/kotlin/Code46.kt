@@ -1,6 +1,6 @@
 package main.kotlin
 
-import java.util.ArrayList
+import java.util.*
 
 fun main(args: Array<String>) {
     println(permute(intArrayOf(1, 2, 3)))

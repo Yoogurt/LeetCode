@@ -1,4 +1,4 @@
-package main.kotlin.Tencent
+package tencent
 
 fun main() {
     println(uniquePaths(7, 3))

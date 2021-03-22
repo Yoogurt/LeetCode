@@ -1,3 +1,18 @@
+@file:Suppress("KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference",
+    "KDocUnresolvedReference", "KDocUnresolvedReference", "KDocUnresolvedReference"
+)
+
 fun main() {
     println(canReach(intArrayOf(4, 2, 3, 0, 3, 1, 2), 5))
     println(canReach(intArrayOf(4, 2, 3, 0, 3, 1, 2), 0))

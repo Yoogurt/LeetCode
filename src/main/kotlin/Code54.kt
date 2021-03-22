@@ -13,17 +13,15 @@ fun kthLargest(root: TreeNode?, k: Int): Int {
 fun kthLargest(root: TreeNode?, k: Ref.IntRef): TreeNode? {
     root ?: return null
 
-    return kthLargest(root.right, k) ?: {
+    return kthLargest(root.right, k) ?: if (k.element == 0) {
+        root
+    } else {
+        k.element--
+
         if (k.element == 0) {
             root
         } else {
-            k.element--
-
-            if (k.element == 0) {
-                root
-            } else {
-                kthLargest(root.left, k)
-            }
+            kthLargest(root.left, k)
         }
-    }()
+    }
 }

@@ -1,4 +1,4 @@
-package every_day
+package everyday
 
 import swap
 

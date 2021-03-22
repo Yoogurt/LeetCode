@@ -1,5 +1,3 @@
-package Code16
-
 fun main() {
     println(divingBoard(1, 1, 3).contentToString())
 }

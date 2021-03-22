@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
 
 }
 
-fun reverseBetween(head: ListNode?, m: Int, n: Int): ListNode? {
+private fun reverseBetween(head: ListNode?, m: Int, n: Int): ListNode? {
     head ?: return null
 
     var nodeToReverse = head

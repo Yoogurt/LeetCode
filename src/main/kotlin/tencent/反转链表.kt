@@ -1,4 +1,4 @@
-package main.kotlin.Tencent
+package tencent
 
 import ListNode
 import buildListNode

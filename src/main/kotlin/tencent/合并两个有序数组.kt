@@ -1,4 +1,4 @@
-package main.kotlin.Tencent
+package tencent
 
 fun main(args: Array<String>) {
     val array1 = intArrayOf(1, 2, 3, 0, 0, 0)

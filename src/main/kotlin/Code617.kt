@@ -1,5 +1,3 @@
-import kotlin.contracts.contract
-
 fun main(args: Array<String>) {
     println(mergeTrees(buildTreeNode(1, 3, 2, 5), buildTreeNode(2, 1, 3, null, 4, null, 7)))
 }

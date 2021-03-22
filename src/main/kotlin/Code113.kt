@@ -1,5 +1,3 @@
-import kotlin.collections.ArrayList
-
 fun main(args: Array<String>) {
     println(pathSum(buildTreeNode(1), 22))
 }

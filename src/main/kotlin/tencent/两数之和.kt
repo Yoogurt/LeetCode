@@ -1,4 +1,4 @@
-package main.kotlin.Tencent
+package tencent
 
 fun main() {
     println(twoSum(intArrayOf(11, 2, 7, 15), 9).contentToString())

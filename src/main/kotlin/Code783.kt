@@ -1,6 +1,3 @@
-import com.sun.source.tree.Tree
-import kotlin.math.min
-
 fun main() {
     println(minDiffInBST(buildTreeNode(4, 2, 6, 0, 3, null, null)))
     println(minDiffInBST(buildTreeNode(90, 69, null, 49, 88, null, 52)))
