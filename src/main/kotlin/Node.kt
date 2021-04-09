@@ -1,8 +1,4 @@
-data class ListNode(@JvmField var `val`: Int, @JvmField var next: ListNode? = null){
-    override fun toString(): String {
-        return "$`val`"
-    }
-}
+data class ListNode(@JvmField var `val`: Int, @JvmField var next: ListNode? = null)
 
 fun buildListNode(vararg args: Int): ListNode {
     assert(args.isNotEmpty())

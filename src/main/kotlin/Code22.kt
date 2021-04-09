@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
     println(generateParenthesis(3))
 }
 
-fun generateParenthesis(n: Int): List<String> {
+private fun generateParenthesis(n: Int): List<String> {
     val result = mutableListOf<String>()
     generateInternal("", 0, n, result)
     return result
