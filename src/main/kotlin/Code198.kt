@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
     println(rob(intArrayOf(2, 1, 1, 2)))
 }
 
-fun rob(nums: IntArray): Int {
+private fun rob(nums: IntArray): Int {
     var max = 0
 
     if (nums.isEmpty()) {
