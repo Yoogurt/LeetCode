@@ -52,7 +52,9 @@ fun buildTreeNode(vararg args: Int?): TreeNode {
     return root
 }
 
-data class TreeNode(val `val`: Int, var left: TreeNode? = null, var right: TreeNode? = null)
+data class TreeNode(val `val`: Int, var left: TreeNode? = null, var right: TreeNode? = null) {
+    override fun equals(other: Any?) = other === this
+}
 
 fun main() {
     print(buildTreeNode(5, 3, 6, 2, 4, null, null, 1))

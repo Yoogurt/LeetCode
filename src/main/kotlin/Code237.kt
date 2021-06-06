@@ -1,10 +1,14 @@
 fun main() {
-    deleteNode(buildListNode(4, 5, 6, 7).next)
+    val list = buildListNode(4, 5, 6, 7)
+    deleteNode(list.next)
+    print(list)
 }
 
 private fun deleteNode(node: ListNode?) {
     node!!
 
-    node.`val` = node.next!!.`val`
-    node.`val` = node.next!!.`val`
+    val next = node.next!!
+
+    node.`val` = next.`val`
+    node.next = next.next
 }

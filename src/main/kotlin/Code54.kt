@@ -4,7 +4,7 @@ fun main(args: Array<String>) {
     println(kthLargest(buildTreeNode(5, 3, 6, 2, 4, null, null, 1), 3))
 }
 
-fun kthLargest(root: TreeNode?, k: Int): Int {
+private fun kthLargest(root: TreeNode?, k: Int): Int {
     return kthLargest(root, Ref.IntRef().also {
         it.element = k
     })!!.`val`

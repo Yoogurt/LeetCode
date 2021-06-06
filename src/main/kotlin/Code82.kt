@@ -1,23 +1,40 @@
 fun main() {
-    println(deleteDuplicates(buildListNode(-1, 1, 2, 3, 4, 5, 6, 6)))
+    println(deleteDuplicates(buildListNode(4, 1, 1, 2, 2, 3, 3, 3, 3)))
+}
+
+private fun removeDuplicateNode(node: ListNode): ListNode? {
+    val currentValue = node.`val`
+    var scanNode: ListNode? = node.next
+
+    return if (currentValue == scanNode?.`val`) {
+        while (scanNode != null && currentValue == scanNode.`val`) {
+            scanNode = scanNode.next
+        }
+        scanNode
+    } else {
+        node
+    }
 }
 
 private fun deleteDuplicates(head: ListNode?): ListNode? {
-    var head: ListNode? = head ?: return null
+    var head = removeDuplicateNode(head ?: return null)
 
-    var currentValue = head?.`val` ?: return null
     while (true) {
-        if (currentValue == head?.next?.`val`) {
-            head = head.next
+        val oldHead = head
+        head = removeDuplicateNode(head ?: return null)
+        if (oldHead == head) {
+            break
         }
     }
 
-    var current = head?.next
-    while (current != null) {
-        if (current.`val` == current.next?.`val`) {
-            current.next = current.next?.next
-        } else {
-            current = current.next
+    var scan = head
+    while (scan != null) {
+        val next = scan.next ?: return head
+
+        val oldNext = scan.next
+        scan.next = removeDuplicateNode(next)
+        if (oldNext == scan.next) {
+            scan = oldNext
         }
     }
 

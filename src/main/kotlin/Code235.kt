@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
     println(lowestCommonAncestor(root, searchTreeNode(root, 2), searchTreeNode(root, 4)))
 }
 
-private fun lowestCommonAncestor(root: TreeNode?, p: TreeNode?, q: TreeNode?): TreeNode? {
+private tailrec fun lowestCommonAncestor(root: TreeNode?, p: TreeNode?, q: TreeNode?): TreeNode? {
     root ?: return null
     p ?: return null
     q ?: return null
