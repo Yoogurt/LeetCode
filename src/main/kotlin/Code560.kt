@@ -2,7 +2,7 @@ fun main(args: Array<String>) {
     println(subarraySum(intArrayOf(1, 2, 1, 2), 3))
 }
 
-fun subarraySum(nums: IntArray, k: Int): Int {
+private fun subarraySum(nums: IntArray, k: Int): Int {
     val sum = IntArray(nums.size + 1) { 0 }
 
     sum[1] = nums[0]
